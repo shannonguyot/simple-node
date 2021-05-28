@@ -2,7 +2,10 @@
 FROM node:13
 
 # Setup ENV.
-ARG PLURAL_NOUN="basset hounds"
+ARG PLURAL_NOUN_ARG="basset hounds"
+RUN echo "PLURAL_NOUN_ARG is ${PLURAL_NOUN_ARG}"
+
+ENV PLURAL_NOUN=$PLURAL_NOUN_ARG
 RUN echo "PLURAL_NOUN is ${PLURAL_NOUN}"
 
 # Create app directory
