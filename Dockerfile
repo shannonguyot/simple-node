@@ -1,6 +1,9 @@
 # Use NodeJS base image
 FROM node:13
 
+# Setup ENV.
+ARG PLURAL_NOUN="basset hounds"
+
 # Create app directory
 WORKDIR /usr/src/app
 
