@@ -4,7 +4,7 @@ function sleep(ms) {
 
 async function main() {
   while(true) {
-    console.log('Containers rule!');
+    console.log('Containers rule, ' + process.env.PLURAL_NOUN + ' drool!');
     await sleep(5000);
   }
 }
