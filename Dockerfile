@@ -3,6 +3,7 @@ FROM node:13
 
 # Setup ENV.
 ARG PLURAL_NOUN="basset hounds"
+RUN echo "PLURAL_NOUN is ${PLURAL_NOUN}"
 
 # Create app directory
 WORKDIR /usr/src/app
